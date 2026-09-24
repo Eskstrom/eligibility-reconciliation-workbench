@@ -33,3 +33,24 @@ Python, DuckDB/SQLite, RapidFuzz, Streamlit.
 Never use real member data or real identifiers. State that the matching logic is illustrative.
 
 [Implementation planning notes](notes/IMPLEMENTATION-NOTES.md)
+
+<!-- portfolio-future-plans:start -->
+## Future plans and PRD direction
+
+*Planning review: 24 September 2026. These are proposed next steps, not completed work or measured outcomes.*
+
+**Priority recommendation:** Retain in the healthcare backlog.
+
+Build only when member-data reconciliation is the next validated problem; avoid duplicating the existing healthcare review story.
+
+### Next scope
+
+- [ ] Create three synthetic source systems and labeled duplicate/nonduplicate records.
+- [ ] Implement an inspectable deterministic baseline before fuzzy matching.
+- [ ] Define auto-match, manual-review and reject thresholds with field-level explanations and an audit trail.
+- [ ] Reuse relevant data-quality checks rather than creating a separate monitoring product.
+
+### Validation and decision criteria
+
+Evaluate false matches, missed matches and reviewer workload against labeled ground truth. Choose thresholds explicitly and demonstrate ambiguous-case recovery. This remains a concept until implementation and validation evidence are added.
+<!-- portfolio-future-plans:end -->
